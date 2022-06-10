@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.slider{
+    background-color: blue;
+}/* 
+.caritasitem{
+    height: 200px;
+    overflow: hidden;
+}
+
+
+.owl-theme .owl-nav{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+display: flex;
+justify-content: space-between;
+}
+.owl-them .owl-nav[class*owl-]{
+    color:white!important;
+    font-size:80px!important;
+} */
+
+
+.animated  {
+  -webkit-animation-duration : 1000 ms  ;
+  animation-duration : 1000 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+.owl-animated-out {
+    z-index : 1 
+     }
+  /* .owl-animated-in - only for upcoming item
+  /* This is very important class. Use z-index if you want move In item above Out item */ 
+  .owl-animated-in {
+    z-index : 0 
+     }

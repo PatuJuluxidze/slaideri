@@ -1,0 +1,58 @@
+body{
+    background-color: yellow;
+}
+.item{
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    margin: 20px;
+}
+.itembox{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+.animated  {
+  -webkit-animation-duration : 1000 ms  ;
+  animation-duration : 1000 ms  ;
+  -webkit-animation-fill-mode : both  ;
+  animation-fill-mode : both  ;
+}  
+/* .owl-animated-out - only for current item */ 
+/* This is very important class. Use z-index if you want move Out item above In item */ 
+.my-element {
+    display: inline-block;
+    margin: 0 0.5rem;
+  
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s; /* don't forget to set a duration! */
+  }
+.owl-animated-out {
+    z-index : 1 
+     }
+  /* .owl-animated-in - only for upcoming item
+  /* This is very important class. Use z-index if you want move In item above Out item */ 
+  .owl-animated-in {
+    z-index : 0 
+     }
+  /* .fadeOut is style taken from Animation.css and this is how it looks in owl.carousel.css:  */ 
+  .fadeOut  {
+    -webkit-animation-name : fadeOut  ;
+    animation-name : fadeOut  ;
+  }  
+  @-webkit-keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }  
+    100% {
+      opacity : 0   ;
+    }  
+  }
+  @keyframes  fadeOut  {
+    0% {
+      opacity : 1   ;
+    }  
+    100% {
+      opacity : 0   ;
+    }  
+  }
